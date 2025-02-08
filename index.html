@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Surya</title>
+    <link rel="stylesheet" href="style uts.css">
+    <style>
+        /* CSS styling bisa dimasukkan di sini */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;    
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .center img {
+            display: block;
+            margin: 0 auto;
+            width: 100%; /* agar gambar mengikuti lebar konten */
+            max-width: 800px; /* batasan lebar gambar */
+            height: auto; /* agar gambar tetap proporsional */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tata Surya: Pengertian Dan Pengaruh Bagi Kehidupan Makhluk Hidup Di Bumi</h1>
+    </header>
+    <nav>
+        <a href="index.html">Tata Surya</a>
+        <a href="Mengganggu.html">Hal Yang Mengganggu</a>
+        <a href="Planet-planet.html">Planet dan Matahari</a>
+        <a href="Bumi.html">Penjelasan Bumi</a>
+    </nav>    
+    <section>
+        <h2>Pengertian</h2>
+        <p>Tata Surya adalah sistem benda langit yang terdiri dari Matahari dan objek-objek lain yang mengorbitinya. Ada delapan planet dengan orbit elips, lima planet kerdil, 173 satelit alami yang sudah teridentifikasi, dan jutaan benda langit lainnya seperti meteor, asteroid, dan komet.
+
+            Semua objek ini saling terikat gravitasi dan berputar di sekitar Matahari. Di antara semua objek yang mengorbit Matahari secara langsung, planet merupakan objek yang paling besar. Bulan merupakan satelit alami dari planet yang mengorbit Matahari secara tidak langsung.
+            
+            Terdapat delapan planet besar dengan lebih dari 160 bulan yang sudah diketahui, serta lima atau lebih planet kerdil dan jutaan asteroid dan komet. Semua benda langit ini membentuk Tata Surya, yang memiliki diameter sekitar 15 triliun kilometer.</p>
+    </section>
+    <div class="center">
+        <img src="tata.jpg" alt="Gambar tata suya" width="800" height="400">
+    </div>
+    <section>
+        <h2>pengaruh tata surya bagi kehidupan makhluk hidup di bumi</h2>
+        <h2>1. pengaruh matahari</h2>
+        <h1>Fotosintesis</h1>
+        <p>Cahaya matahari dibutuhkan tumbuhan dan alga untuk berfotosintesis, yang menghasilkan oksigen dan mendukung rantai makanan. </p>
+        <h1>Iklim</h1>
+        <p>Panas matahari menghangatkan Bumi dan membentuk iklim. </p>
+        <h1>Nutrisi</h1>
+        <p>Panas matahari membantu tumbuhan berfotosintesis dan manusia mendapatkan vitamin D. </p>
+        <h1>Keseimbangan lingkungan</h1>
+        <p>Matahari berperan penting dalam menjaga keseimbangan lingkungan dan ekosistem. </p>
+    </section>
+    <section>
+        <h2>2. pengaruh pergerakan bumi</h2>
+        <h1>Perubahan musim</h1>
+        <p>Revolusi Bumi, yaitu perputaran Bumi mengelilingi matahari, menyebabkan perubahan musim. </p>
+        <h1>Pergantian siang dan malam</h1>
+        <p>Rotasi Bumi pada porosnya menyebabkan pergantian siang dan malam. </p>
+    </section>
+
+<script>
+    // Mendapatkan elemen kata yang akan dijadikan link
+    var linkWord = document.getElementById("linkWord");
+
+    // Menambahkan event listener untuk menangani klik pada kata
+    linkWord.addEventListener("click", function() {
+        // Menentukan link yang ingin dituju
+        var linkUrl = "https://informazone.com/asal-usul-tata-surya/"; // Ganti dengan URL yang diinginkan
+
+        // Mengarahkan ke link yang ditentukan saat kata diklik
+        window.location.href = linkUrl;
+    });
+</script>
+    <footer>
+        <p>Hak Cipta &copy; 2025 Muhammad Al-Ghifari Yusuf</p>
+    </footer>
+</body>
+<script>
+    // Mendapatkan semua tautan dalam navigasi
+    var navLinks = document.querySelectorAll("nav a");
+
+    // Menambahkan event listener untuk setiap tautan
+    navLinks.forEach(function(link) {
+        link.addEventListener("mouseenter", function() {
+            // Mengubah warna teks saat dihover
+            this.style.color = "#FFA500"; // Warna dapat disesuaikan
+            // Membuat tautan agak transparan saat dihover
+            this.style.opacity = "0.7"; // Opacity dapat disesuaikan
+            // Membuat tautan membesar saat dihover
+            this.style.transform = "scale(1.1)"; // Skala dapat disesuaikan
+        });
+
+        link.addEventListener("mouseleave", function() {
+            // Mengembalikan gaya awal saat tautan tidak dihover
+            this.style.color = "#fff";
+            this.style.opacity = "1";
+            this.style.transform = "scale(1)";
+        });
+    });
+</script>
+</html>

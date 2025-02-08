@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengganggu</title>
+    <link rel="stylesheet" href="style uts.css">
+    <style>
+        /* CSS styling bisa dimasukkan di sini */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;    
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .center img {
+            display: block;
+            margin: 0 auto;
+            width: 100%; /* agar gambar mengikuti lebar konten */
+            max-width: 800px; /* batasan lebar gambar */
+            height: auto; /* agar gambar tetap proporsional */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hal yang dapat mengganggu keteraturan sistem tata surya</h1>
+    </header>
+    <nav>
+        <a href="index.html">Tata Surya</a>
+        <a href="Mengganggu.html">Hal Yang Mengganggu</a>
+        <a href="Planet-planet.html">Planet dan Matahari</a>
+        <a href="Bumi.html">Penjelasan Bumi</a>
+    </nav>    
+    <section>
+        <h1>1. Gravitasi Planet Lain</h1>
+        <p>Interaksi gravitasi antara planet, terutama yang lebih besar seperti Jupiter, dapat menyebabkan perubahan orbit planet lain.</p>
+        <h1>2. Asteroid dan Komet</h1>
+        <p>Pergerakan asteroid dan komet yang memasuki sistem tata surya dapat mempengaruhi orbit planet dan benda langit lainnya.</p>
+        <h1>3. Peristiwa Supernova</h1>
+        <p>Ledakan bintang supernova di dekat sistem tata surya dapat memengaruhi gerakan dan posisi benda-benda langit.</p>
+        <h1>4. Perubahan Dalam Matahari</h1>
+        <p>Aktivitas matahari, seperti ledakan matahari atau perubahan dalam medan magnetnya, dapat mempengaruhi kondisi di seluruh tata surya.</p>
+        <h1>5 . Kolisi Benda Langit</h1>
+        <p>Tabrakan antara planet, bulan, atau asteroid dapat menyebabkan perubahan yang signifikan dalam sistem tata surya.</p>
+        <h1>6. Pergeseran Orbit</h1>
+        <p>Dengan waktu yang sangat lama, pergeseran orbit benda langit, baik yang alami maupun yang disebabkan oleh interaksi gravitasi, dapat mengubah dinamika tata surya.</p>
+    </section>
+
+<script>
+    // Mendapatkan elemen kata yang akan dijadikan link
+    var linkWord = document.getElementById("linkWord");
+
+    // Menambahkan event listener untuk menangani klik pada kata
+    linkWord.addEventListener("click", function() {
+        // Menentukan link yang ingin dituju
+        var linkUrl = "https://informazone.com/asal-usul-tata-surya/"; // Ganti dengan URL yang diinginkan
+
+        // Mengarahkan ke link yang ditentukan saat kata diklik
+        window.location.href = linkUrl;
+    });
+</script>
+    <footer>
+        <p>Hak Cipta &copy; 2025 Muhammad Al-Ghifari Yusuf</p>
+    </footer>
+</body>
+<script>
+    // Mendapatkan semua tautan dalam navigasi
+    var navLinks = document.querySelectorAll("nav a");
+
+    // Menambahkan event listener untuk setiap tautan
+    navLinks.forEach(function(link) {
+        link.addEventListener("mouseenter", function() {
+            // Mengubah warna teks saat dihover
+            this.style.color = "#FFA500"; // Warna dapat disesuaikan
+            // Membuat tautan agak transparan saat dihover
+            this.style.opacity = "0.7"; // Opacity dapat disesuaikan
+            // Membuat tautan membesar saat dihover
+            this.style.transform = "scale(1.1)"; // Skala dapat disesuaikan
+        });
+
+        link.addEventListener("mouseleave", function() {
+            // Mengembalikan gaya awal saat tautan tidak dihover
+            this.style.color = "#fff";
+            this.style.opacity = "1";
+            this.style.transform = "scale(1)";
+        });
+    });
+</script>
+</html>

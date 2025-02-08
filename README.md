@@ -1,2 +1,1 @@
-# tata-surya
-web
+# Sistem_TataSurya_pedia.github.io

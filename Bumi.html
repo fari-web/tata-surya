@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumi</title>
+    <link rel="stylesheet" href="style uts.css">
+    <style>
+        /* CSS styling bisa dimasukkan di sini */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;    
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .center img {
+            display: block;
+            margin: 0 auto;
+            width: 100%; /* agar gambar mengikuti lebar konten */
+            max-width: 800px; /* batasan lebar gambar */
+            height: auto; /* agar gambar tetap proporsional */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Penjelasan Bumi</h1>
+    </header>
+    <nav>
+        <a href="index.html">Tata Surya</a>
+        <a href="Mengganggu.html">Hal Yang Mengganggu</a>
+        <a href="Planet-planet.html">Planet dan Matahari</a>
+        <a href="Bumi.html">Penjelasan Bumi</a>
+    </nav>
+    <section>
+        <h2>Bumi</h2>
+        <p>Bumi adalah planet yang merupakan bagian dari tata surya dan tempat tinggal bagi manusia dan makhluk hidup lainnya. Bumi adalah planet terpadat dan terbesar kelima di tata surya.</p>
+        <p>Bumi adalah planet terdekat ketiga dari Matahari yang merupakan planet terpadat dan terbesar kelima dari delapan planet dalam Tata Surya. Bumi juga merupakan planet terbesar dari empat planet kebumian di Tata Surya. Bumi terkadang disebut dengan dunia atau "Planet Biru".</p>
+    </section>
+    <div class="center">
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/945x630/photo/2021/05/31/ciri-ciri-dan-karakteristik-plan-20210531121623.jpg" alt="Gambar tata suya" width="800" height="400">
+    </div>
+    <section>
+        <h2>Beberapa ciri bumi</h2>
+        <p>• Bumi merupakan planet daratan (land planet) yang tersusun dari batuan. </p>
+        <p>• Bumi terbentuk sekitar 4,54 miliar tahun yang lalu. </p>
+        <p>• Bumi memiliki diameter rata-rata 12.742 km. </p>
+        <p>• Bumi memiliki bentuk yang tidak bulat sempurna, melainkan pepat seperti bola yang ditekan. </p>
+        <p>• Bumi memiliki orbit berbentuk elips, sehingga jaraknya dengan Matahari berubah-ubah. </p>
+        <p>• Bumi memiliki rotasi yang berlangsung selama 23 jam 56 menit. </p>
+        <p>• Bumi memiliki sumbu rotasi yang miring sebesar 23,5 derajat, sehingga menyebabkan adanya empat musim. </p>
+        <p>• Bumi memiliki lapisan-lapisan, yaitu kerak bumi, selimut, dan inti. </p>
+        <p>• Bumi sebagian besarnya terdiri dari besi, oksigen, silikon, magnesium, belerang, nikel, kalsium, dan aluminium. </p>
+        <p>• Bumi memiliki gravitasi permukaan yang tinggi, medan magnet yang kuat, dan tektonik lempeng yang aktif. </p>
+    </section>
+
+<script>
+    // Mendapatkan elemen kata yang akan dijadikan link
+    var linkWord = document.getElementById("linkWord");
+
+    // Menambahkan event listener untuk menangani klik pada kata
+    linkWord.addEventListener("click", function() {
+        // Menentukan link yang ingin dituju
+        var linkUrl = "https://ipa.pelajaran.co.id/matahari/"; // Ganti dengan URL yang diinginkan
+
+        // Mengarahkan ke link yang ditentukan saat kata diklik
+        window.location.href = linkUrl;
+    });
+</script>
+    <footer>
+        <p>Hak Cipta &copy; 2024 Muhammad Al-Ghifari Yusuf</p>
+    </footer>
+</body>
+<script>
+    // Mendapatkan semua tautan dalam navigasi
+    var navLinks = document.querySelectorAll("nav a");
+
+    // Menambahkan event listener untuk setiap tautan
+    navLinks.forEach(function(link) {
+        link.addEventListener("mouseenter", function() {
+            // Mengubah warna teks saat dihover
+            this.style.color = "#FFA500"; // Warna dapat disesuaikan
+            // Membuat tautan agak transparan saat dihover
+            this.style.opacity = "0.7"; // Opacity dapat disesuaikan
+            // Membuat tautan membesar saat dihover
+            this.style.transform = "scale(1.1)"; // Skala dapat disesuaikan
+        });
+
+        link.addEventListener("mouseleave", function() {
+            // Mengembalikan gaya awal saat tautan tidak dihover
+            this.style.color = "#fff";
+            this.style.opacity = "1";
+            this.style.transform = "scale(1)";
+        });
+    });
+</script>
+</html>

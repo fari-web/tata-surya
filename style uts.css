@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Set minimum tinggi body sesuai tinggi viewport */
+    display: flex;
+    flex-direction: column; /* Membuat body menjadi flex container dengan arah kolom */
+    background-image: url('https://data.1freewallpapers.com/detail/nebula-stars-universe-galaxy-space-dark-glow.jpg');
+    background-size:cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* agar tulisan berada di tengah */
+}
+
+nav {
+    background-color: #f5ebeb;
+    padding: 10px;
+    text-align: center; /* agar link-link berada di tengah */
+}
+p {
+    color: #f5ebeb;
+}
+h1 {
+    color: #f5ebeb;
+}
+h2{
+    color: #f5ebeb;
+}
+li{
+    color: #f5ebeb;  
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+    text-align: justify; /* agar teks rata kanan-kiri */
+    margin: auto; /* agar konten berada di tengah */
+    max-width: 800px; /* batasan lebar konten */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.center {
+    text-align: center;
+}
+
+.center img {
+    display: block;
+    margin: 0 auto;
+}
+
+
